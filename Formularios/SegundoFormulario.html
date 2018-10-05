@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Segundo Fpormulario</title>
+	<link rel="stylesheet" type="text/css" href="css/SegundoFormulario.css">
+</head>
+<body>
+
+	<form id="contact-form" action="http://devfiles.myopera.com/articles/409/script.php" method="post">
+
+		<input type="hidden" name="redirect" value="http://www.opera.com" />
+		<ul>
+		<li>
+			<label for="name">Nombre:</label>
+			<input type="text" name="name" id="name" placeholder="ingrese su nombre" value="" required />
+		</li>
+		<li>
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="ingrese su email" id="password" value="" />
+		</li>
+		<li>
+			<label for="comments">Comentarios:</label>
+			<textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+		</li>
+		<li>
+			<input type="submit" value="Guardar" />
+			<input type="reset" value="Volver">
+			
+		</li>
+		</ul>
+		<ul>
+			<li>Como te sientes hoy?</li>
+		</ul>
+			<li>
+				<label for="angry">Furioso</label>
+				<input type="checkbox" name="angry" id="angry" value="angry" checked="checked" />
+			</li>
+			<li>
+				<label for="Sad">Triste</label>
+				<input type="checkbox" name="sad" id="sad" value="sad" />
+			</li>
+			<li>
+				<label for="Happy">Feliz</label>
+				<input type="checkbox" name="happy" id="happy" value="happy" />	
+			</li>
+			<li>
+				<label for="ambivalent">Deprimido</label>
+				<input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent" />
+			</li>
+
+			<li>Califique el nivel de calificacion</li>
+			<ul>
+				<li>
+					<label for="vsat">Muy Satisfecho</label>
+					<input type="radio" name="bueno" id="feliz" value="feliz" checked="checked" />
+				</li>
+				<li>
+					<label for="name">Mas o menos</label>
+					<input type="radio" name="Bueno" id="Triste" value="Triste" />
+				</li>
+				<li>
+					<label for="name">Malo</label>
+					<input type="radio" name="bueno" id="furioso" value="Furioso" />
+				</li>
+				<li>
+					<label for="name">Horrible</label>
+					<input type="radio" name="Bueno" id="Deprimido" value="Deprimido" />
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<label for="photo">Seleccionar Fotografia:</label>
+					<input type="file" name="photo" id="photo" value="" />
+				</li>
+				<li>
+					<label for="location">Ciudad:</label>
+					<select name="location" id="location">
+						<option value=""> seleccionar ciudad</option>
+						<option value="Medellin">Medellin</option>
+						<option value="SantaMartha">Santa Martha</option>
+						<option value="Cartagena">Cartagena</option>
+						<option value="Armenia">Armenia</option>
+						<option value="Bucaramanga">Bucaramanga</option>
+						
+					</select></li>
+			</ul>
+	</form>
+	
+</body>
+</html>
